@@ -1,30 +1,35 @@
 # Final
 Before begining to read this project, I understand that many of you will struggle with some cricket terminologies. For that reason I have included an additional Glossary file within the repository for you to look at and make some sense of my data anf findings
 
-Quick Guide to Running the Babar Azam Analysis Project
+# Quick Guide to Running the Babar Azam Analysis Project
 Quick Summary of How to Run This Project
 
-Install Libraries
+# Install Libraries
 Open the data.R file and install all the relevant libraries required for the project. Ensure all packages mentioned in the dependencies are correctly installed.
-Generate Static Plots
-Run the code in the section titled “For Static Plots” in the data.R file.
-Then, open the staticplot.R file and execute the entire code chunk to generate various static visualizations.
-Regression Analysis
+
+# Generate Static Plots
+Run the code in the section titled “For Static Plots” in the data.R file. Then, open the staticplot.R file and execute the entire code chunk to generate various static visualizations.
+
+# Regression Analysis
 A good starting point would be to move to the model.R file and execute the entire code chunk to view the regression analysis. This provides findings into Babar Azam’s performance, both as a player and as a captain.
-Explore Team Performance via Shiny App
+
+# Explore Team Performance via Shiny App
 Open the shinyapp.R file to explore an interactive analysis of the team’s progression under Babar’s captaincy.
 Use this to assess whether any improvements during his tenure are attributed to his skills or external factors, such as toss outcomes.
-Natural Language Processing (NLP)
+
+# Natural Language Processing (NLP)
 For NLP-related analysis, return to the data.R file and run the code in the section titled “For Text Processing.”
 This step prepares the textual data for further analysis.
-Sentiment Analysis and Word Associations
+
+# Sentiment Analysis and Word Associations
 Open the textprocess.R file:
 Run the code until line 62 to generate a chart showing the Average Sentiment for Babar Azam.
 Continue running the remaining code to view summary statistics and extract lexicons for sentiment and word associations.
+
 Below you will find a detailed description for every R file contained within the project repository:
 
-data.R file
-Summary
+## data.R file
+# Summary
 
 The data.R file contains:
 
@@ -76,7 +81,7 @@ To use saved performance data: read_csv("data/babar_data.csv").
 To use saved articles: read_lines("data/articles_raw.txt") or read_lines("data/filtered_articles.txt").
 Notes for Reproducibility - The use_local flag in this file enables switching between archived and live data retrieval. - If running the project in a different environment, ensure that the data/ folder is present and contains the saved outputs from this file.
 
-Static Plots
+## Static Plots
 Summary
 
 This section contains visualizations analyzing Babar Azam’s performance in ODI matches over his career. It focuses on: - Babar Azam’s average ODI runs across his career. - His performance against major opponents, both before and during his captaincy.
@@ -118,7 +123,7 @@ Ensure the working directory is set correctly to save images in the Images folde
 
 The saved images can be directly inserted into any R Markdown report or presentation.
 
-Shiny App
+## Shiny App
 This repository contains two Shiny Apps that analyze Babar Azam’s performance in ODI cricket matches. The first app provides an analysis of the Pakistan cricket team’s winning percentage with and without Babar Azam as captain, while the second app presents an interactive map showcasing Babar Azam’s centuries during his captaincy and as a regular player. The objective of these apps is to provide a detailed visual and interactive analysis of Babar Azam’s impact as a player and a captain.
 
 Dependencies
@@ -211,7 +216,9 @@ Server: Contains logic for filtering and visualizing win percentages.
 App 2: Toss Impact Analysis.
 UI: Defines the user interface components.
 Server: Contains logic for toss outcome analysis.
-Model
+
+
+## Model
 Regression Model
 
 The code evaluates Babar Azam’s ODI batting performance to determine whether being the captain of the Pakistan cricket team impacts his performance, and whether he remains an ideal choice for captaincy. The analysis uses data from the cricketdata package using Babar’s player ID and performs a regression analysis to compare his performance as a captain versus as a regular player. THe analysis assesses whether the additional responsibilities of captaincy influence his individual batting performance.
@@ -240,7 +247,7 @@ Home_Away: To assess if playing at home has an effect on runs scored.
 
 Interaction Term (Captaincy_Status:Home_Away): To see if being captain influences performance differently depending on whether the match was played at home or away.
 
-Text Processing
+## Text Processing
 This project analyzes the sentiment of articles related toBabar Azam’s captaincy and the Pakistani cricket team. The analysis leverages sentiment lexicons such as AFINN, Bing, and NRC to extract sentiment scores and determine the words most associated with positive and negative sentiments in the articles.
 
 ** Before Running the Code **
