@@ -1,0 +1,134 @@
+---
+title: "Glossary"
+author: "Muhammad Saif Imtiaz"
+date: "2024-12-07"
+output: html_document
+---
+---
+
+
+## Overview
+
+The document provides a glossary of cricketing terms and abbreviations, aimed at helping those unfamiliar with cricket understand the key metrics and terminologies used in datasets such as `babar_data.csv` and `odi_result.csv`.
+
+---
+
+## **Glossary of Cricket Terms**
+
+**Result**  
+Describes the outcome of the match, such as:  
+- **Won:** Indicates the team won the match.  
+- **Lost:** Indicates the team lost the match.  
+- **Tied:** The match ended with both teams scoring the same number of runs.  
+- **No Result (n/r):** The match was abandoned or interrupted, leading to no conclusive result.
+
+**Margin**  
+The difference in runs or wickets by which a team won or lost. Examples:  
+- **6 wickets:** Winning team chased the target with 6 wickets remaining.  
+- **95 runs:** Winning team restricted the opponent 95 runs short of the target.
+
+**Toss**  
+Indicates which team won the coin toss at the start of the match. Teams often choose to bat or bowl based on pitch conditions.
+
+**Bat (Batting Order)**  
+The team's decision to bat **1st** or **2nd** after the toss.  
+- **1st:** Team bats first to set a target.  
+- **2nd:** Team bats to chase the target.
+
+**Opposition**  
+The opposing team against whom the match is played. Examples include Australia, England, and India.
+
+**Start Date**  
+The date on which the match began, usually in the format `DD/MM/YYYY`.
+
+**Home/Away**  
+Indicates whether the match was played on the team's home ground or away:  
+- **Home:** Played in Pakistan (e.g., Karachi, Lahore, Rawalpindi, Multan).  
+- **Away:** Played outside Pakistan.
+
+**Captaincy Status**  
+Identifies whether a player (e.g., Babar Azam) was the captain during the match.  
+- **Captain:** Player acted as the team leader.  
+- **Not Captain:** Player participated but did not lead.
+
+**Runs**  
+The number of runs scored by the batter in an innings.
+
+**Wickets**  
+The number of batters dismissed by the fielding team during the match.
+
+**Cumulative Runs**  
+The total runs scored by a player or team over a series of matches.
+
+**Average Runs**  
+The average number of runs scored per match, calculated as:  
+\[
+\text{Average Runs} = \frac{\text{Total Runs}}{\text{Matches Played}}
+\]
+
+**Centuries (100s)**  
+When a batter scores 100 or more runs in a single innings.
+
+**Fifties (50s)**  
+When a batter scores between 50 and 99 runs in a single innings.
+
+**Economy Rate**  
+For bowlers, the number of runs conceded per over bowled. Calculated as:  
+\[
+\text{Economy Rate} = \frac{\text{Runs Conceded}}{\text{Overs Bowled}}
+\]
+
+**Strike Rate (Batting)**  
+The rate at which a batter scores runs, calculated as:  
+\[
+\text{Strike Rate} = \frac{\text{Runs Scored}}{\text{Balls Faced}} \times 100
+\]
+
+
+**Player ID**  
+A unique identifier for a player (e.g., Babar Azam’s player ID is `348144`).
+
+---
+
+## **Abbreviations in the CSV Files**
+
+**n/r**  
+No Result (match abandoned or interrupted).
+
+**BF**  
+Balls Faced: Number of balls a batter faced during their innings.
+
+**X4s and X6s**  
+Number of boundaries (4s) and sixes (6s) hit by the batter in an innings.
+
+**SR (Strike Rate)**  
+Measures how quickly a batter scores runs.
+
+**Pos**  
+Batting position (e.g., 1 for opener, 7 for lower-middle order).
+
+**Dismissal**  
+Method of dismissal (e.g., bowled, caught, LBW).
+
+**W/L**  
+Win/Loss status of the match.
+
+**Overs**  
+Number of six-ball deliveries bowled in an innings.
+
+**FOW (Fall of Wicket)**  
+Indicates the score at which each wicket fell during the innings.
+
+**Captain**  
+Indicates if the player captained the match (yes/no).
+
+**Venue**  
+The stadium where the match was played.
+
+**RR (Run Rate)**  
+The average number of runs scored per over.
+
+**ODI**  
+One-Day International: A format where each team bats for up to 50 overs.
+
+---
